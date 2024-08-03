@@ -1,4 +1,4 @@
-# TinyPico
+# Tibicon
 
 ## 概要 (Overview)
 
@@ -39,7 +39,7 @@ RAM が小さいので大規模なプログラムには向きません。
 
 ## 回路図（Schematics）
 
-[<img src="schematics/schematics.jpg" width="700">](schematics/tinypico.pdf)
+[<img src="schematics/schematics.jpg" width="700">](schematics/tibicon.pdf)
 
 ## 組み立て方 (Build guide)
 

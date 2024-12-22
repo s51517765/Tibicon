@@ -115,8 +115,8 @@ void loop() {
 
 ### PWM
 
-本基板では GPIO0 と GPIO3 で PWM が使用できます。
-<br>GPIO3 では通常の Arduino と同じ使い方で使用できますが、GPIO0 では以下のようにコーディングします。
+本基板では GPIO0 ～ GPIO4 で PWM が使用できます。
+<br>GPIO1 ～ GPIO04では通常の Arduino と同じ使い方で使用できますが、GPIO0 では以下のようにコーディングします。
 
 ```
 void setup() {
@@ -140,6 +140,24 @@ void loop()
     analogWrite(3,i);
     delay(10);
   }
+}
+```
+
+### ADC(Analog Read)
+
+本基板では GPIO1 ～ GPIO4 で ADC が使用できます。
+<br>通常の Arduino と同じ使い方で使用できます。
+
+```
+void setup() {
+  pinMode(1, OUTPUT);
+  pinMode(4, INPUT);
+}
+
+void loop() {
+  //ADC は1,2,3,4が使用可能
+  int adc = analogRead(4);
+  analogWrite(1, adc);
 }
 ```
 
